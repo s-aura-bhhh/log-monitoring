@@ -1,4 +1,4 @@
-# 📊 Website Uptime Monitor
+# Website Uptime Monitor
 
 > **Real-time website monitoring with automated alerts and beautiful dashboard**
 
@@ -9,7 +9,7 @@
 
 A complete serverless solution for monitoring website uptime with real-time dashboard, automated alerts, and comprehensive metrics tracking. Built with AWS Lambda, DynamoDB, and React — **fully automated and scalable**.
 
-## ✨ Features
+## Features
 
 - 🔍 **Automated Website Monitoring** with customizable ping schedules
 - 📊 **Real-time Dashboard** showing uptime metrics and response times
@@ -19,7 +19,7 @@ A complete serverless solution for monitoring website uptime with real-time dash
 - 🎨 **Beautiful UI** with responsive design and smooth animations
 - 🔒 **Secure & Cost-effective** with pay-per-use pricing
 
-## 🏗️ Architecture
+## Architecture
 
 ![Architecture Diagram](static/images/architecture.png)
 
@@ -67,7 +67,7 @@ uptime_assertions = {
 }
 ```
 
-### 3️⃣ Deploy Infrastructure
+### Deploy Infrastructure
 
 ```bash
 cd infra
@@ -85,7 +85,7 @@ terraform apply -var-file=envs/prod.tfvars
 - ✅ CloudFront distribution for dashboard
 - ✅ S3 bucket for static website hosting
 
-### 4️⃣ Access Your Dashboard
+### Access Your Dashboard
 
 After deployment, Terraform will output the dashboard URL:
 
@@ -93,7 +93,7 @@ After deployment, Terraform will output the dashboard URL:
 terraform output dashboard_url
 ```
 
-## 📋 Usage
+## Usage
 
 ### Dashboard Features
 
@@ -102,7 +102,7 @@ terraform output dashboard_url
 - **Invalid Status Count**: Number of unexpected HTTP status codes
 - **Average Response Time**: Mean response time across all checks
 
-#### 📈 Real-time Monitoring
+#### Real-time Monitoring
 - **Response Time Chart**: Visual timeline of response times (last 30 minutes)
 - **Recent Ping Results**: Detailed list of recent ping attempts with status
 - **Auto-refresh**: Dashboard updates every minute automatically
@@ -162,7 +162,7 @@ infra/envs/
 └── prod.tfvars
 ```
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 ├── dashboard/
@@ -206,7 +206,7 @@ terraform plan -var-file=envs/dev.tfvars
 terraform apply -var-file=envs/dev.tfvars
 ```
 
-## 🚀 CI/CD Pipeline
+## CI/CD Pipeline
 
 The project includes automated GitHub Actions workflows:
 
@@ -221,7 +221,7 @@ AWS_ACCESS_KEY_ID          # AWS access key
 AWS_SECRET_ACCESS_KEY      # AWS secret key
 ```
 
-## 📊 Monitoring & Alerts
+## Monitoring & Alerts
 
 ### Email Notifications
 
@@ -239,7 +239,7 @@ Monitor system health through:
 - API Gateway performance
 - CloudFront access logs
 
-## 🧹 Cleanup
+## Cleanup
 
 Remove all resources:
 
@@ -248,38 +248,5 @@ cd infra
 terraform destroy -var-file=envs/prod.tfvars
 ```
 
-**⚠️ Warning**: This will delete all monitoring data and dashboard.
 
-## 🚀 Future Improvements
 
-- 📱 Mobile app for monitoring on-the-go
-- 🌍 Multi-region monitoring capabilities
-- 📊 Advanced analytics and reporting
-- 🔔 Slack/Teams integration for alerts
-- 📈 SLA tracking and reporting
-- 🎯 Custom monitoring rules and thresholds
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Add tests for new functionality
-5. Run the test suite (`npm test`)
-6. Commit your changes (`git commit -m 'Add amazing feature'`)
-7. Push to the branch (`git push origin feature/amazing-feature`)
-8. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-- 🐛 **Issues**: Report bugs via [GitHub Issues](https://github.com/your-repo/issues)
-- 💡 **Feature Requests**: Suggest new features
-- 💬 **Discussions**: Let's connect on [LinkedIn](https://www.linkedin.com/in/hasan-ashab/)
-
----
-
-**Made with ❤️ and ☕ by Hasan Ashab**
